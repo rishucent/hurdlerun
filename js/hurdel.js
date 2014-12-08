@@ -86,7 +86,7 @@ window.onload = function(){
                 cfU = mw - (movebrickU+50);
                 var btopU = (mh/2)+rhU;
                 var bbotU = (mh/2)+10;
-                canvas.rect(cfU, (mh/2)-rhU,rwU,rhU);
+                canvas.rect(cfU, (mh/2)-(rhU+10),rwU,rhU);
                 canvas.fillStyle = "#000";
                 canvas.fill();
                 var cond1U = (btopU <= topU && btopU >= botU) || (bbotU <= topU && bbotU >= botU);  
@@ -137,7 +137,7 @@ window.onload = function(){
                 cf = mw - (movebrick+50);
                 var btop = rh;
                 var bbot = 10;
-                canvas.rect(cf, mh-rh,rw, mh-10);
+                canvas.rect(cf, mh-(rh+10),rw, mh-10);
                 canvas.fillStyle = "#000";
                 canvas.fill();
 
@@ -151,7 +151,7 @@ window.onload = function(){
                 }
 
                 movebrick = movebrick + 13;
-                if(incg==4){
+                if(incg==3){
                     incg = 0;
                     count++;
                 }
